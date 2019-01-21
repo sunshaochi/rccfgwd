@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="22dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="28dp"
+                android:text="首页"
+                android:textColor="@color/black_1"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+
+            <com.rmwl.rcchgwd.view.FlyBanner
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@+id/banner_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/sygb" />
+
+                <com.rmwl.rcchgwd.view.LanternRoll.XMarqueeView
+                    android:id="@+id/upview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    app:isSetAnimDuration="true"
+                    app:isSingleLine="false" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="精品推荐"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="热销产品 值得购买"
+                android:textColor="#666666"
+                android:textSize="10sp"/>
+
+            <View
+                android:layout_marginTop="15dp"
+               style="@style/view_line"></View>
+
+
+
+            <com.rmwl.rcchgwd.view.SycpView
+                android:id="@+id/sycp_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></com.rmwl.rcchgwd.view.SycpView>
+
+            <View
+                android:layout_marginTop="30dp"
+                style="@style/view_line"
+                android:layout_height="5dp"
+                ></View>
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="30dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/iv_gsjs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/sygsjs" />
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_gsjs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_gsjs"
+                        android:text="公司介绍"
+                        android:textColor="@color/black_1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_gsjs"
+                        android:layout_toRightOf="@id/iv_gsjs"
+                        android:text="敬请期待"
+                        android:textColor="@color/black_2"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="30dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/iv_aqbz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/sygsjs" />
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_aqbz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_aqbz"
+                        android:text="公司介绍"
+                        android:textColor="@color/black_1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_aqbz"
+                        android:layout_toRightOf="@id/iv_aqbz"
+                        android:text="敬请期待"
+                        android:textColor="@color/black_2"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+</LinearLayout>

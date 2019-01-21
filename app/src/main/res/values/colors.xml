@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red_2">#ec615c</color>
+    <color name="orange_1">#fd4d4d</color>
+    <color name="black_3">#666666</color>
+    <color name="black_2">#999999</color>v
+    <color name="black_1">#333333</color>
+    <color name="bg_color">#f5f5f5</color>
+    <color name="nomo_color">#cdcdcd</color>
+    <color name="text_red">#ff5d5d</color>
+    <color name="transparent_1">#80000000</color><!--透明背景-->
+    <color name="transparent">#00000000</color><!--透明背景-->
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="paydi_blue">#8eacf1</color>
+
+    <color name="gray_bg">#E8E8E8</color>
+    <color name="pro_color">#C9A663</color>
+
+    <color name="fra_my">#654e24</color>
+
+    <color name="bg_start">#B29151</color>
+    <color name="bg_end">#DABC7C</color>
+    <color name="line_color">#f5f5f5</color>
+    <color name="line_intensity">#ededed</color>
+    <color name="line_one">#ff3d45</color>
+    <color name="line_two">#ffc332</color>
+    <color name="line_three">#78cf78</color>
+    <color name="text_intensity">#c9c9c9</color>
+
+    <color name="money_red">#97393d</color>
+
+    <color name="text_book_red">#de664a</color>
+    <color name="black_5">#bcbcbc</color>
+
+</resources>

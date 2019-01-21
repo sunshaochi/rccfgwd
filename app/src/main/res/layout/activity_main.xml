@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fra_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/rb_sy"
+                style="@style/Radiobutton"
+                android:drawableTop="@drawable/selected_data"
+                android:text="首页"
+                android:textColor="@drawable/btn_text_color"
+                />
+
+            <RadioButton
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/rb_cp"
+                style="@style/Radiobutton"
+                android:drawableTop="@drawable/selected_statent"
+                android:text="推荐"
+                android:textColor="@drawable/btn_text_color" />
+
+            <RadioButton
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/rb_wd"
+                style="@style/Radiobutton"
+                android:drawableTop="@drawable/selected_platfrom"
+                android:text="我的"
+                android:textColor="@drawable/btn_text_color" />
+
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

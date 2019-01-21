@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--banner-->
+    <declare-styleable name="FlyBanner">
+        <attr name="points_visibility" format="boolean"/>
+        <attr name="points_position" format="enum">
+            <enum name="CENTER" value="0"/>
+            <enum name="LEFT" value="1"/>
+            <enum name="RIGHT" value="2"/>
+        </attr>
+        <attr name="points_container_background" format="reference|color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CommonView">
+        <attr name="desTextColor" format="color" />
+        <attr name="categoryImage" format="reference" />
+        <attr name="desText" format="string" />
+        <attr name="isShowCategoryImage" format="boolean" />
+        <attr name="statusImage" format="reference" />
+        <attr name="statusImage_width" format="dimension" />
+        <attr name="statusImage_height" format="dimension" />
+        <attr name="desTextSize" format="dimension" />
+
+        <attr name="isShowTextNotes" format="boolean" />
+        <attr name="isSingleTextNotes" format="boolean" />
+        <attr name="notesText" format="string" />
+        <attr name="notesTextColor" format="color" />
+        <attr name="notesTextSize" format="dimension" />
+
+        <attr name="isShowTextCent" format="boolean" />
+        <attr name="isSingleTextCent" format="boolean" />
+        <attr name="centText" format="string" />
+        <attr name="centTextColor" format="color" />
+        <attr name="centTextSize" format="dimension" />
+
+        <attr name="isShowArraw" format="boolean" />
+
+    </declare-styleable>
+
+
+</resources>

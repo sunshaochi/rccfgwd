@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_act_layout"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_order"
+                android:textColor="@color/bg_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约中"
+                android:textSize="14sp" />
+            <View
+                android:id="@+id/view_order"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+                android:background="@color/white"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_income"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_income"
+                android:textColor="@color/bg_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收益中"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view_income"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+                android:background="@color/white"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_settle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_settle"
+                android:textColor="@color/bg_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已结清"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view_settle"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+                android:background="@color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshRecyclerView
+            android:id="@+id/plv_cp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ptr:ptrMode="both" />
+        <com.rmwl.rcchgwd.view.LoadingView
+            android:id="@+id/load_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>
